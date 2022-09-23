@@ -1,0 +1,625 @@
+Q1 What is oops? and its principles?
+oops:reusability,extensibility
+principles:
+
+1.Abstraction:showing only functionality and hiding internal details. EX:ATM machine,mobile phone
+
+2.Encapuslation:wrapping up or binding of data into single unit. EX:school bag.folder ,presentation
+    it is achieved by using private field and getter setter methods
+    
+ 3.Inheritance: property of one class can access in another class EX:Parents and child
+ 
+ 4.Polymorphism: one task perform in different ways.
+   	compile time polymorphism
+   	run time polymorphism
+   	
+ Q2. WHY JAVA is platform independent?
+  java ->compile->byte code
+  case sensitive
+ 
+  Data Types:
+  primitive data type:
+  				int=4 byte -> 8digit number only
+  				short=2byte
+  				long=8 byte
+  				char=2byte
+  				float=4byte ->used 6 precised number
+  				double=8byte
+  				boolean=1bit
+  				byte=1byte
+  	OPERATOR:
+  	  1.Addition:+,-*,/
+  	  2.Logical:&&,|,!
+      3.Assignment:+=,-=.*=
+      4.Relational:<, >,==
+      5.increment/decrement: 
+      
+      VARIABLE:
+         It is storage of data,used to allocate memory space
+         RULES:
+          1.variable name can start with letter,underscore(_),or doller sign(&)
+          2.do not include space between variable name
+          3.do not use any special character expect _  and &
+          4.do not include any keyword in variable name
+          
+   Q3.why pointer is not included in java
+   Q4.What are primitive data type
+   Q5.what is variable
+   Q6.what are types of variable
+   Q7.why main method is static in java
+   Q8.can we write static public void main instead of public static void main
+           yes ,because public and static are modifier
+   Q9.can we change return type of main?
+      no it give run time error as main method not found
+   Q10.Can we change variable of command line argument      
+   Q11.what is system.out.println	
+  			system is a class present in java.lang package.	
+  			out is a static reference print stream  class which is present inside system class
+  			println is method present in print stream class 
+    Q12.can we  create class as private or protected?
+    Q13.if we have multiple classes in single  how will decide file name?
+    Q14. difference between scanner and bufferedreader classes?
+    Q15 diff.for loop and while loop
+    Q16.diff.between while and do while
+    17.what is use of conditional switch statement
+    q18.what is array and its type
+    q19.can  we change array after initialization
+    
+    
+    
+    Q.A company manufactures 3 products namely computer stationary, fixed disks and computers. The following codes are used to indicate them
+			product					Code
+			Computer Stationary		1
+			Fixed disks				2
+			Computers				3
+			
+The company has a discount policy as follows:
+			Product					Order amount				discount rate
+			Computer stationary		$500 or more				12%
+			Computer stationary		$300 or more				8%
+			Computer stationary		below $300					2%
+			Fixed Disks				$2000 or more				10%
+			Fixed Disks				$1500 or more				5%
+			Computers				$5000 or more				10%
+			Computers				$2500 or more				5%
+			
+Calculate discount.
+ 
+ 
+ 1.1 3 5 7 9 ....n
+ 2.1/1 + 1/2 + 1/3 +   + 1/n = ?
+ 
+3. 1 8 27 64 ....n
+4.1/1 + 2/4 + 3/9 + ...n/n = ?
+ 
+ 5.1 9 25 49 ....n
+6.  1/1 + 2/2 + 3/3 +...+ n/n = ?
+  
+  7.	1 4 9 16 25 ....n
+8.	1*2 + 2*3 + 3*4 + ... 15*16 = ?
+9.	1-2+3-4+5-6... n = ?
+10.	1/1! + 2/2! +  ... + n/n! = ?
+    
+   1.Calculate Simple Interest
+2.Calculate Area of Triangle
+3.Create class Student with id,name and marks of 3 subjects and calculate percentage.
+4.create class Employee with id,name,workingDays,perDay and calculate salary
+
+
+In a car racing video game, the car is an object. You can drive the car, turn the car, or stop the car when needed but you need to drive long. You will get money according to the Km you have travelled. For example if you have travelled 123 km then the product of the km (ie 1*2*3 = 6) would be the amount you win. Write a program to find the product of the digits in the given input number.
+ Include a function named productDigits that accepts an integer argument and returns an integer that corresponds to the product of digits in the integer.
+The function returns -1 if the input number is negative or greater than 32767.
+ If the function returns -1, print Invalid Input.
+ Input and Output Format:
+Input consists of an integer.
+Output consists of an integer.
+Refer sample output for formatting specifications.
+ Sample Input 1:
+32
+Sample Output 1:
+6
+ Sample Input 2:
+-67
+Sample Output 2:
+Invalid Input
+
+Write a program to convert given temperature from Fahrenheit to Centigrade.
+Formula:
+C/5 = (F-32)/9
+C stands for Centigrade.
+F stands for Fahrenheit.
+ Include a function named convertToCentigrade that accepts an integer argument and returns a float that corresponds to the centigrade equivalent.
+ If the input is a negative number, print Invalid Input and terminate the program.
+ Input and Output Format:
+Input consists of a single integer.
+Output consists of a floating point number that corresponds to the centigrade equivalent. The output is displayed correct to 2 decimal places.
+Sample Input 1:
+77
+ Sample Output 1:
+25.00
+Sample Input 2:
+-2345
+Sample Output 2:
+Invalid Input
+
+
+
+
+
+
+Q.1
+Person(id,name,dob) <- Employee(workingDays,perDay,salary) <- SalesPerson(sales,commission)
+
+if sale 95% then commission 20% of salary
+		90% then commission 15% of salary
+		80% then commission 10% of salary
+		75% then commission 5% of salary
+		
+		calculate commission and total salary
+
+Q.
+2. Person <- Customer(prodName,quantity, price, billAmount) <- Discount 
+
+	if billAmount is 20000 or greater than then 15% discount on billAmount
+				15000 or more then 10% discount on billAmount
+				10000 or more then 7% discount on billAmount
+				below 10000 no discount.
+				
+	calculate discount and final bill.
+	
+	Read the question carefully and follow the input and output format.
+
+In a given input number , find out the factorial of each individual digit and assign it to output array.
+
+Input and Output Format:
+Input consists of a single integer. Output consists of an Integer array, the individual factorials.
+
+Print "Number too large" when the given input numbers is greater than 32767 .
+Print "Number too small" when the given input is a negative number.
+
+Include a function named digitFactorial(int number) whose return type is void.
+The output array is stored in a global variable named factorial.
+
+Sample Input 1:
+123
+
+Sample Output 1:
+1
+2
+6
+
+
+Sample Input 2:
+-2526
+
+Sample Output 2:
+Number too small
+	
+	
+	Read the question carefully and follow the input and output format.
+
+Given an input array which contains age of some employees, write a program to find the sum of ages of employees greater than 18.
+
+Input and Output Format :
+First line of input consists of n, the number of elements. Next n lines correspond to the array elements. Output consist of an integer, which is the sum.
+
+1) Print "Invalid array size" when size of the array is a negative number and terminate the program.
+2) Print "Invalid input" when there is any negative number available in the input array and terminate the program.
+
+Include a function named newArraySum(int age[],int size) whose return type is an integer, which is the sum.
+
+Sample Input 1:
+5
+21
+22
+17
+10
+25
+Sample Output 1:
+68
+
+Sample Input 2:
+6
+50
+-36
+
+Sample Output 2:
+Invalid input
+	
+Write a program to find if the 
+If the size of the array is negative or if any element in the array is negative or if the average marks scored by the student is greater than 99 , print “Invalid Input” and terminate the program.
+ Input and Output Format:
+Input consists of n+1 integers. The first integer corresponds to n, the number of elements in the array. The next 'n' integers correspond to the elements in the array.
+Output consists of a string --- “First Grade University” or “Second Grade University” or “Third Grade University” or “Invalid Input”.
+Assume that the maximum size of the array is 20.
+Sample Input 1:
+5
+92
+87
+78
+74
+80
+ 
+Sample Output 1:
+First Grade University
+ Sample Input 2:
+-5
+Sample Output 2:
+Invalid Input
+Sample Input 3:
+5
+23
+2
+-5
+ Sample Output 3:
+Invalid Input
+
+
+
+Q
+
+Read the question carefully and follow the input and output format.
+
+Given an input array, find the difference b/w second largest and second smallest element in the array.
+
+Hint : There is no repetition of element in the array.
+
+Input and Output Format:
+
+First line of input consists of n, the number of elements. Next n lines correspond to the array elements. Output consist of an integer, which is the difference b/w second largest and second smallest..
+
+1) Print Invalid array size when size of the array is negative and terminate the program.
+2) Print Invalid input when there is any negative numbers available in the input array and terminate the program.
+
+Include a function named secondMaxMinDiff(int[] array, int n) whose return type is an integer, which is the difference b/w second largest and second smallest.
+
+Sample Input 1:
+5
+1
+2
+3
+4
+5
+
+Sample Output 1:
+2
+
+Sample Input 2:
+4
+-3
+
+Sample Output 2:
+Invalid input
+
+
+Write a program to find the product of the prime digits in the given input number.
+ 
+Include a function named productPrimeDigits that accepts an integer argument and returns an integer that corresponds to the product of the prime digits in the integer.
+The function returns -1 if the input number is negative or greater than 32767.
+ 
+If the function returns -1, print Invalid Input.
+ Please note that 1 and 0 are neiher prime nor composite.
+ 
+Input and Output Format:
+Input consists of an integer.
+Output consists of an integer.
+Refer sample output for formatting specifications.
+ 
+ 
+Sample Input 1:
+324
+ 
+ 
+Sample Output 1:
+6
+ 
+Sample Input 2:
+-67
+ 
+Sample Output 2:
+Invalid Input
+
+
+Q.
+Write a program to find the second smallest of all divisors of the given number.
+ For example, the divisors of 21 are 1,3,7 and 21. The second smallest divisor is 3.
+ Include a function named secondSmallest that accepts an integer argument and returns an integer. The function returns the second smallest divisor or returns -1 
+ if it is a negative number or if it is greater than 32767.
+ If the function returns -1, print Invalid Input.
+ Input and Output Format:
+Input consists of a single integer.
+Output consists of a single integer.
+Refer sample output for formatting specifications.
+Sample Input 1:
+21
+ Sample Output 1:
+3
+ Sample Input 2:
+-241
+ Sample Output 2:
+Invalid Input
+Sample Input 3:
+50000
+ Sample Output 3:
+Invalid Input
+
+
+Q
+Write a program to find the average of the array.
+ Include a function named avgArray that accepts 2 arguments and returns a float. The first argument is the input array and the second argument is an int that corresponds to the size of the array. The function returns a float that corresponds to the average of the array.
+ If the size of the array is negative or if any element in the array is negative , print “Invalid Input” and terminate the program.
+ Input and Output Format:
+Input consists of n+1 integers. The first integer corresponds to n, the number of elements in the array. The next 'n' integers correspond to the elements in the array.
+Output consists of a floating point number that corresponds to the average. It is displayed correct to 2 decimal places.
+Assume that the maximum size of the array is 20.
+ 
+Sample Input 1:
+7
+1
+9
+8
+4
+6
+4
+5
+Sample Output 1:
+5.29
+Sample Input 2:
+-5
+Sample Output 2:
+Invalid Input
+Sample Input 3:
+5
+23
+2
+-5
+
+ Sample Output 3:
+Invalid Input
+Invalid Input
+
+Q
+In a game show everybody got one coupon with some code. They need to count the digits in the code and send SMS to the given number.
+ 
+Write a program to find the number of digits in the given number.
+ Include a function named countDigits that accepts an integer argument and returns an integer that corresponds to the number of digits. 
+ If the input is a negative number, the function returns -1.
+ If the function returns -1, print Invalid Input.
+Input and Output Format:
+Input consists of a single integer.
+Output consists of an integer that corresponds to the number of digits in the input.
+Sample Input 1:
+250
+Sample Output 1:
+3
+Sample Input 2:
+-2345
+Sample Output 2:
+Invalid Input
+
+
+What is the output for the below code ?
+1. public class Test {
+2. public static void main(String[] args){
+3. int i = 010;
+4. int j = 07;
+5. System.out.println(i);
+6. System.out.println(j);
+7. }
+8. }
+Options are 
+A.8 7
+B.10 7
+C.Compilation fails with an error at line 3
+D.Compilation fails with an error at line 5
+
+
+Read the question carefully and follow the input and output format.
+
+Given an input array that represents the marks of students, find out the marks which are greater than or equal to average mark of all students.
+
+Input and Output Format:
+First line of input consists of n, the number of elements in the input array.
+Next n lines correspond to the array elements. Output consist of an integer array.
+
+1) Print "Invalid array size" when size of the array is negative and terminate the program.
+2) Print "Invalid input" when there is any negative numbers available in the input array and terminate the program.
+
+Include a function named aboveAverageMarks(int array[], int size) whose return type is void.
+The output array is stored in a instance variable named above_average.
+
+Sample Input 1:
+5
+10
+20
+30
+40
+50
+Sample Output 1:
+30
+40
+50
+
+Sample Input 2:
+4
+-3
+Sample Output 2:
+Invalid Input
+
+
+
+
+Q.
+Write a program to find whether the given number is a 3/5 Number.
+ 
+A number is a 3/5 Number if the product of the digits in the number is divisible by 3 or 5.
+ 
+Include a function named divisibleByThreeFive that accepts an integer argument and returns an integer. The function returns
+1.	1 if it is a 3/5 Number
+2.	0 if it is not a 3/5 Number
+3.	-1 if it is a negative number
+ 
+Input and Output Format:
+Input consists of a single integer.
+Output consists of a string.
+Refer sample output for formatting specifications.
+ 
+ 
+Sample Input 1:
+251
+ 
+Sample Output 1:
+yes
+ 
+Sample Input 2:
+241
+ 
+Sample Output 2:
+no
+ 
+Sample Input 3:
+-9
+ 
+Sample Output 3:
+Invalid Input
+
+
+
+core java mini projects:  
+Library Mgmt System
+Hotel Mgmt system
+Hospital Mgmt System
+Student Information System
+ATM Machine
+Salary Magmt System
+Career Information Mgmt System
+Course Mgmt System
+Event Mgmt System
+Electricity Billing System
+Book store Mgmt
+Medical Mgmt system
+Stock Mgmt system
+Telephone Billing System
+Travel Mgmt System
+Campain Mgmt System
+University Admission Mgmt System
+Content Mgmt System
+Student Result Processing system
+Labour Mgmt system
+
+
+
+Q.
+Read the question carefully and follow the input and output format.
+
+Given an integer array. The first index represents the Student id, Second index represents C-programming marks and the third index Represents SQL marks. 
+Write a program to find the Ids of students who have cleared both C-programming and SQL.
+
+Note :(1) The Pass Marks is >=70
+
+Input and Output Format :
+
+
+First line of input consists of n, the number of elements. Next n lines correspond to the array elements. Output consist of an 
+Sample Input 1:
+9
+1
+25
+75
+3
+75
+80
+2
+75
+75
+
+Sample Output 1:
+3
+2
+
+Sample Input 2:
+6
+4
+25
+-78
+
+Sample Output 2:
+Invalid input
+
+
+
+101.firstMiddleSame
+Read the question carefully and follow the input and output format.
+
+Write a program to check if the first and middle element in an array is the same, if so display “100” in output or else display the first element of the array.
+
+Note: Array size is always odd.
+
+Input and Output Format :
+The first line of the input consists of an integer, n that corresponds to the number of elements in the array.
+The next 'n' lines correspond to the elements in the array.
+
+1) Print "Invalid array size" when size of the array is a negative number and terminate the program.
+2) Print "Invalid input" when there is any negative numbers available in the input array and terminate the program.
+3) Print "Size must be odd" when the size of the array is even.
+
+Sample Input 1:
+7
+8
+4
+5
+8
+3
+2
+1
+
+Sample Output 1:
+100
+
+Sample Input 2:
+10
+4
+5
+6
+-8
+
+Sample Output 2:
+Invalid input
+
+Sample Input 3:
+3
+4
+8
+6
+
+Sample Output 3:
+4
+
+
+
+
+Q.
+Read the question carefully and follow the input and output format.
+
+Given a number n, count the occurences of a number,x in n.
+
+Input and Output Format :
+The first line of the input consists of an integer n, the second line consists of an integer, which is the digit whose occurence is to be calculated. 
+Output is an integer that gives the count.
+
+Print "Number too small" if any of the 2 input numbers is less than 0 and terminate the program.
+Print "Number too large" if any of the 2 input numbers is greater than 32767 and terminate the program.
+
+Sample Input 1:
+1122
+1
+Sample Output 1:
+2
+
+
+Sample Input 2:
+-2134
+Sample Output 2:
+Number too small
+
+    
